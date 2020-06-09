@@ -1,0 +1,12 @@
+Install Virtual box :
+
+apt install virtualbox 
+
+Install Vmware :
+
+download bundle file  from site 
+
+chmod a+x     bundle file
+
+./bundle file 
+
