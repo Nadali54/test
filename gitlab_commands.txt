@@ -1,0 +1,387 @@
+    1  sudo -s
+    2  apt update
+    3  ping 8.8.8.8
+    4  apt update 
+    5  apt install ssh
+    6  apt install dconf-editor
+    7  sudo -s
+    8  netstat -nat
+    9  nc -l 443
+   10  apt install netcat
+   11  apt update
+   12  apt install netcat
+   13  nc -l -p 443 > /dev/null &
+   14  netstat -nat
+   15  nc -l -p 143 > /dev/null &
+   16  netstat -nat
+   17  nc -l -p 80 > /dev/null &
+   18  netstat -nat
+   19  tcpdump
+   20  apt install dovecot-imapd 
+   21  apt clean
+   22  apt update 
+   23  apt update
+   24  apt install ssh
+   25  groupadd sftponly
+   26  cat /etc/group
+   27  user add abc -d / -g 1001 -M -N -o -u 1001
+   28  useradd abc -d / -g 1001 -M -N -o -u 1001
+   29  passwd abc
+   30  cat /etc/passwd
+   31  cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+   32  nano +76 /etc/ssh/sshd_config
+   33  mkdir /var/www
+   34  cd /var/www/
+   35  mkdir test_readonly
+   36  chmod 755 test_readonly/
+   37  mkdir test_readwrite
+   38  chown root:sftponly test_readwrite/
+   39  chmod 775 test_readwrite/
+   40  mkdir test_noaccess
+   41  chmod 733 test_noaccess/
+   42  /etc/init.d/ssh restart
+   43  ip -o
+   44  ip -a
+   45  ip 
+   46  if -a
+   47  ifconfig 
+   48  sftp cic1@192.168.20.10
+   49  useradd cic1
+   50  passwd cic1
+   51  nano /etc/ssh/sshd_config
+   52  systemctl restart sshd.service 
+   53  ifconfig
+   54  ls
+   55  nano /etc/ssh/sshd_config
+   56  systemctl restart sshd.service 
+   57  nano /etc/ssh/sshd_config
+   58  systemctl restart sshd.service 
+   59  nano /etc/ssh/sshd_config.bak 
+   60  nano /etc/ssh/sshd_config
+   61  systemctl restart sshd.service 
+   62  nano /etc/ssh/sshd_config
+   63  cd /
+   64  ls
+   65  mkdir bell
+   66  ls
+   67  cd bell/
+   68  touch t1
+   69  ls
+   70  nano /etc/ssh/sshd_config
+   71  systemctl restart sshd.service 
+   72  nano /etc/ssh/sshd_config
+   73  systemctl restart sshd.service 
+   74  nano /etc/ssh/sshd_config
+   75  systemctl restart sshd.service 
+   76  cd ~
+   77  ls
+   78  cd Desktop/
+   79  ls
+   80  ll
+   81  nano /etc/ssh/sshd_config
+   82  systemctl restart sshd.service 
+   83  nano /etc/ssh/sshd_config
+   84  systemctl restart sshd.service 
+   85  ls /home/
+   86  useradd test
+   87  passwd test 
+   88  cd ~
+   89  ls
+   90  sudo -s
+   91  nano /etc/passwd
+   92  ls /home/
+   93  ls /home/cic/
+   94  chown cic1:cic1 /home/cic/Desktop/test2
+   95  sudo chown cic1:cic1 /home/cic/Desktop/test2
+   96  cd /home/cic/Desktop/
+   97  ll
+   98  chown tom:ftpaccess test
+   99  ll
+  100  sudo -s
+  101  sftp cic1@192.168.20.128
+  102  sftp cic@192.168.20.204
+  103  sftp -P 2042 cic@205.174.165.75
+  104  sftp -P 1282 cic1@205.174.165.75
+  105  sudo -s
+  106  nano /etc/ssh/sshd_config
+  107  systemctl restart sshd.service 
+  108  ls
+  109  cd /chroot/tom/
+  110  mkdir uploads
+  111  ls
+  112  ll
+  113  addgroup ftpaccess
+  114  adduser tom --ingroup ftpaccess --shell /usr/sbin/nologin
+  115  chown tom:ftpaccess uploads
+  116  ll
+  117  nano /etc/ssh/sshd_config
+  118  systemctl restart sshd.service 
+  119  nano /etc/ssh/sshd_config
+  120  systemctl restart sshd.service 
+  121  chown tom:ftpaccess /home/cic/Desktop/test
+  122  chown tom:ftpaccess /home/cic/Desktop/test/tom
+  123  chown tom:ftpaccess /home/cic/Desktop/test/tom/upload/
+  124  nano /etc/ssh/sshd_config
+  125  systemctl restart sshd.service 
+  126  nano /etc/ssh/sshd_config
+  127  systemctl restart sshd.service 
+  128  nano pass
+  129  nano /etc/passwd
+  130  nano /etc/ssh/sshd_config
+  131  systemctl restart sshd.service 
+  132  nano /etc/ssh/sshd_config
+  133  systemctl restart sshd.service 
+  134  nano /etc/ssh/sshd_config
+  135  systemctl restart sshd.service 
+  136  ll /home/cic/Desktop/test
+  137  ll /home/cic/Desktop
+  138  nano /etc/ssh/sshd_config
+  139  systemctl restart sshd.service 
+  140  chown -R tom:sftpaccess /home/cic/Desktop/test/tom/
+  141  group
+  142  groups
+  143  nano /etc/group
+  144  chown -R tom:sftpaccess /home/cic/Desktop/test/tom/
+  145  chown tom:ftpaccess test
+  146  sudo -s
+  147  nano /etc/passwd
+  148  nano /etc/ssh/sshd_config
+  149  systemctl restart sshd.service 
+  150  chown root /home/cic/Desktop/
+  151  chmod 777 /home/cic/Desktop/
+  152  chown cic1:cic1 /home/cic/Desktop/test/
+  153  chmod 777 /home/cic/Desktop/test/
+  154  chown cic1:cic1 /home/cic/Desktop/test/
+  155  nano /etc/ssh/sshd_config
+  156  systemctl restart sshd.service 
+  157  nano /etc/ssh/sshd_config
+  158  systemctl restart sshd.service 
+  159  groupadd sftpgroup
+  160  usermod -G sftpgroup cic1
+  161  adduser senthil -g sftpgroup -s /sbin/nologin
+  162  adduser senthil -g sftpgroup
+  163  adduser cic2  -g sftpgroup
+  164  adduser cic2  -G  sftpgroup -s /sbin/nologin
+  165  nano /etc/ssh/sshd_config
+  166  systemctl restart sshd.service 
+  167  nano /etc/ssh/sshd_config
+  168  systemctl restart sshd.service 
+  169  chmod 755 /home/cic/Desktop/test2
+  170  nano /etc/ssh/sshd_config
+  171  nano 
+  172  nano /etc/passwd
+  173  systemctl restart sshd.service 
+  174  nano /etc/passwd
+  175  systemctl restart sshd.service 
+  176  nano /etc/ssh/sshd_config
+  177  nano /etc/ssh/sshd_config
+  178  useradd cic2
+  179  passwd cic2
+  180  nano /etc/ssh/sshd_config
+  181  systemctl restart sshd.service 
+  182  nano /etc/passwd
+  183  nano /etc/ssh/sshd_config
+  184  systemctl restart sshd.service 
+  185  nano /etc/passwd
+  186  useradd cic3
+  187  passwd cic3
+  188  nano /etc/passwd
+  189  adduser cic4
+  190  nano /etc/passwd
+  191  nano /etc/ssh/sshd_config
+  192  systemctl restart sshd.service 
+  193  nano /etc/ssh/sshd_config
+  194  systemctl restart sshd.service 
+  195  nano /etc/ssh/sshd_config
+  196  systemctl restart sshd.service 
+  197  mkdir -p /chroot/tom
+  198  cd /chroot//tom/
+  199  ls -la
+  200  mkdir uploads
+  201  ls
+  202  ll
+  203  adduser tom --ingroup ftpaccess --shell /usr/sbin/nologin 
+  204  ping cic-virtual-machine 
+  205  ssh root@cic-virtual-machine 
+  206  passwd 
+  207  ssh root@cic-virtual-machine 
+  208  ssh cic@cic-virtual-machine 
+  209  sudo -s
+  210  apt update
+  211  apt install /home/cic/Downloads/anydesk_5.5.4-1_amd64.deb 
+  212  apt install /home/cic/Downloads/forticlient-sslvpn_4.4.2333-1_amd64.deb 
+  213  apt install forticlient
+  214  wget -O - https://repo.fortinet.com/repo/ubuntu/DEB-GPG-KEY | sudo apt-key add - 
+  215  deb [arch=amd64] https://repo.fortinet.com/repo/ubuntu/ xenial multiverse 
+  216  sudo apt-get update 
+  217  sudo apt install forticlient 
+  218  apt install forticlient 
+  219  sudo -s
+  220  apt update
+  221  apt install /home/cic/Downloads/surfshark-release_1.0.0-1.1_amd64.deb 
+  222  apt update
+  223  apt install surfshark-vpn
+  224  sudo apt-get install surfshark-vpn
+  225  dpkg -i /home/cic/Downloads/surfshark-release_1.0.0-1.1_amd64.deb 
+  226  apt -f install 
+  227  apt install surfshark-vpn
+  228  apt install /home/cic/Downloads/expressvpn_2.4.4.19-1_amd64.deb 
+  229  apt install /home/cic/Downloads/nordvpn-release_1.0.0_all.deb 
+  230  apt update
+  231  apt install nordvpn
+  232  nordvpn
+  233  nordvpn login
+  234  apt remove dconf
+  235  ap autoremove
+  236  apt autoremove
+  237  git diff
+  238  git tag
+  239  git tag -a v3.0 -m 'first version'
+  240  git config --global user.email nadali54@yahoo.com
+  241  git config --global user.name nadali
+  242  git tag -a v3.0 -m "first version"
+  243  git tag
+  244  git log
+  245  git status
+  246  cd test/
+  247  ls
+  248  git status
+  249  git tag
+  250  git tag -a v3.0 -m 'first version"
+  251  git tag -a v3.0 -m 'first version'
+  252  git tag
+  253  git log
+  254  git tag -a v2.0 5cba2732e5265de5d2b483c0c4ac
+  255  git tag
+  256  git push
+  257  git push origin v2.0
+  258  git push origin master
+  259  git checkout v2.0
+  260  git blame stage.txt
+  261  git blame stage.txt -L2
+  262  git blame stage.txt -L2,4
+  263  git blame stage.txt -L2,3
+  264  git bisect start
+  265  git bisect good 73ef0fb9910c24259a7
+  266  gpg is for signature 
+  267  gpg --list-key
+  268  gpg --gen-key
+  269  ssh-keygen -t ed25519 -C "nadali54@yahoo.com"
+  270  xclip -sel clip < ~/.ssh/id_ed25519.pub
+  271* 
+  272  xclip -sel clip < ~/.ssh/id_ed25519.pub
+  273  ssh-keygen -t ed25519 -C "nadali54@yahoo.com"
+  274  xclip -sel clip < ~/.ssh/id_ed25519.pub
+  275  apt update
+  276  apt clean
+  277  apt update
+  278  apt install clip
+  279  apt install htop
+  280  apt install ssh
+  281  apt install xclip
+  282  xclip -sel clip < ~/.ssh/id_ed25519.pub
+  283  pwd
+  284  git remote add origin "https://github.com/Nadali54/test.git"
+  285  git pull origin master
+  286  touch edu1 edu2 edu3
+  287  git status
+  288  git add -A
+  289  git status
+  290  git commit -m "changes"
+  291  git status
+  292  git log
+  293  git branch
+  294  git branch edureka
+  295  git checkout edureka 
+  296  git status
+  297  touch edu4
+  298  nano edu2
+  299  git status
+  300  git add -A
+  301  git commit -m "changes"
+  302  git status
+  303  ls
+  304  git branch master
+  305  git checkout master
+  306  git status
+  307  ls
+  308  git merge edureka 
+  309  ls
+  310  cat edu2
+  311  vi edu2
+  312  git branch edureka2
+  313  git checkout edureka2
+  314  touch t1 t2
+  315  git stau
+  316  git staus
+  317  git status
+  318  git add -A
+  319  git commit -m "chnages"
+  320  git status
+  321  ls
+  322  git checkout edureka
+  323  ls
+  324  touch edu4
+  325  git add -A
+  326  git commit -m "change"
+  327  git status
+  328  ls
+  329  git checkout master 
+  330  ls
+  331  git merge master
+  332  ls
+  333  git rebase master
+  334  ls
+  335  git checkout edureka2
+  336  ls
+  337  git rebase master
+  338  ls
+  339  git checkout master 
+  340  git rebase master
+  341  ls
+  342  git rebase edureka2
+  343  ls
+  344  git rebase master 
+  345  ls
+  346  git checkout edureka2
+  347  touch t4
+  348  git add -A
+  349  git commit -m "changes"
+  350  ls
+  351  git checkout master
+  352  ls
+  353  git rebase master
+  354  ls
+  355  git rebase edureka2
+  356  ls
+  357  git status
+  358  history
+  359  ssh-genkey
+  360  ssh-keygen 
+  361  cat /root/.ssh/id_rsa.pub
+  362  git push origin edureka
+  363  git push origin edureka2
+  364  git push origin master
+  365  git branch
+  366  git push origin feature 
+  367  touch edu9.txt
+  368  git add edu9.txt 
+  369  git commit -m "'change"
+  370  git status
+  371  nano edu9.txt 
+  372  git status
+  373  git add -A
+  374  git commit  -m "ch"
+  375  git status
+  376  cat edu9.txt 
+  377  git log
+  378  git checkout 3d64f4e604 edu9.txt
+  379  cat edu9.txt 
+  380  git log
+  381  git checkout f683a327f6e3 edu9.txt
+  382  cat edu9.txt 
+  383  git checkout 4e54bce575ed3 edu9.txt
+  384  git checkout 4e54bce575ed3 master 
+  385  git branch
+  386  history
+  387  history>gitlab_commands.txt
