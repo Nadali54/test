@@ -1,0 +1,6 @@
+heyyyyyyyyyyyyyy
+on the desktop ubuntu :
+
+foldermount.sh   
+
+run this script : /etc/systemd/system/foldermount.service
